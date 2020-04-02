@@ -1,10 +1,12 @@
 
 public class newSorting {
     public static void newSorting(int[] A, int size) {
-      System.out.print(" NS:");
-      printArr(A);
-      //If A has fewer elements than size (or is 1 item): 
-      if(A.length < size || A.length <= 1) {
+      // if |A| is one, already sorted, do nothing
+      if(A.length <= 1) {
+        return;
+      }
+      //If A has fewer elements than size: 
+      else if(A.length < size) {
         // Sort A using recursive QuickSort
         quicksort(A, 0, A.length-1);
       }else {
@@ -53,8 +55,6 @@ public class newSorting {
     }
     
     public static void quicksort(int[] A, int start, int end) {
-      System.out.print(" QS:");
-      printArr(A);
       //base case for recursion
       if(start >= end) {
         return;
@@ -92,11 +92,4 @@ public class newSorting {
       quicksort(A, j+1 , end);
     }
     
-    public static void printArr(int[] arr) {
-      for(int i=0;i<arr.length; i++) {
-        if(i!=0) System.out.print(",");
-        System.out.print(arr[i]);
-      }
-      System.out.println();
-    }
 }

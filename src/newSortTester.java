@@ -6,7 +6,7 @@ public class newSortTester {
     int[] numbers = {7,-22,15,0,-8,0,12};
     System.out.print("Unsorted: ");
     printArr(numbers);
-    newSorting.newSorting(numbers, 0);
+    newSorting.newSorting(numbers, 3);
     System.out.print("  Sorted: ");
     printArr(numbers);
   }
