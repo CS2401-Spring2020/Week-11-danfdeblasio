@@ -46,3 +46,4 @@ Lateness rule: -10 pts for 1 day of lateness / - 20 pts for 2 days of lateness /
 50 pts	JUnit tests for method `newSorting` in `newSortingTester.java `(10 pts per test case / of which, 5 pts for the justification and 5 pts for the implementation)
 
 
+[![Run on Repl.it](https://repl.it/badge/github/CS2401-Spring2020/Week-11-danfdeblasio)](https://repl.it/github/CS2401-Spring2020/Week-11-danfdeblasio)
